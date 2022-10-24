@@ -143,4 +143,8 @@ button {
     .show-info div:last-of-type {
         width: 20%;
     }
+    .img-info:hover .img-text {
+        font-size: 12px;
+        left: 15px;
+    }
 }
