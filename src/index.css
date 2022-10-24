@@ -1,0 +1,146 @@
+/*
+
+- app.jsx File
+
+*/
+
+.theBackground {
+    height: 100vh;
+    background: url('./images//background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.the_header {
+    margin-bottom: 50px;
+    text-shadow: 0 0 5px tomato;
+    text-align: center;
+}
+
+.App {
+    padding: 20px;
+    width: 550px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.img-info {
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(297deg, #ff5722, transparent);
+    background-blend-mode: saturation;
+}
+
+.photo {
+    border-top-right-radius: 55px;
+    border-bottom-left-radius: 110px;
+    box-shadow: 0 0 5px 3px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.img-info:hover .photo {
+    transform: scale(1.05);
+}
+
+.img-text {
+    position: absolute;
+    bottom: 34px;
+    left: 100%;
+    padding: 10px;
+    background: #a52a2a3d;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    width: fit-content;
+    transition: .5s;
+}
+
+.img-info:hover .img-text {
+    left: 42px;
+    color: white;
+}
+
+
+/*
+
+- input.jsx File
+
+*/
+
+.the-input {
+    margin-top: 10px;
+    border: none;
+}
+
+.the-input:focus {
+    margin-top: 10px;
+    border: none !important;
+}
+
+.the-input::placeholder {
+    font-size: 1.25rem;
+}
+
+.show-info {
+    margin: 5px auto 10px auto !important;
+    border: 1px solid tomato;
+    height: 70px;
+    background: linear-gradient(45deg, #2196f385, #ff9800a1);
+    border-radius: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.show-info p {
+    margin-bottom: 5px;
+}
+
+button {
+    margin-bottom: 10px !important;
+}
+
+.parent {
+    margin: 10px auto;
+}
+
+.delete-par {
+    perspective: 1000px;
+}
+
+.delete-it {
+    transition: all .5s !important;
+    transform-style: preserve-3d;
+    transform: translateX(300%);
+}
+
+.show-info:hover .delete-it {
+    transform: rotate(360deg) scale(1.05);
+    background: #00a8ff;
+    color: white;
+    border: none;
+    box-shadow: 0 0 15px 2px #00aaffa7, 0 0 20px 4px #00a8ff;
+    border-radius: 50%;
+}
+
+.the-data-show {
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 3px 3px 0px #9e9e9e;
+}
+
+@media(max-width:425px) {
+    .App {
+        width: 300px
+    }
+    .parent {
+        width: 260px;
+    }
+    .show-info div:first-of-type {
+        width: 80%;
+    }
+    .show-info div:last-of-type {
+        width: 20%;
+    }
+}
